@@ -7,7 +7,9 @@ new Swiper(".motivation__swiper", {
   spaceBetween: 90,
   loopedSlides: 3,
   autoplay: {
-    delay: 3000
+    delay: 3000,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false
   },
   pagination: {
     el: ".swiper-pagination",
