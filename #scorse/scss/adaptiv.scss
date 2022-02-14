@@ -40,6 +40,28 @@
 }
 
 @media (max-width: 750px) {
+  .burger__menu {
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    ul a {
+      width: 100%;
+    }
+    a {
+      width: 46%;
+    }
+    .burger__item {
+      a:after {
+        display: none;
+      }
+    }
+  }
+  .benefits__row {
+    transform: translateY(-100px);
+  }
+  footer {
+    transform: translateY(-100px);
+  }
   .footer__block {
     width: 100%;
   }
