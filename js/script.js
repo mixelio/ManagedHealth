@@ -32,3 +32,12 @@ if (iconMenu) {
     menuBody.classList.toggle("_active");
   });
 }
+
+// window.addEventListener("click", e => {
+//   const target = document.querySelector("._lock");
+//   console.log(target);
+//   if (target) {
+//     menuBody.classList.remove("_active");
+//     iconMenu.classList.remove("_active");
+//   }
+// });

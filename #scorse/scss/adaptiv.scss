@@ -8,13 +8,44 @@
     }
     &:first-child {
       margin-right: 40px;
+      position: relative;
+      z-index: 3;
     }
   }
   .menu__icon {
     display: block;
   }
   .burger__menu {
-    display: block;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    flex: 1 1 auto;
+  }
+  .header__btn {
+    width: 55vw;
+    margin-right: 0;
+    &:after {
+      display: none;
+    }
+  }
+  .burger__item {
+    span {
+      margin-right: 9px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #272727;
+    }
+    li:last-child {
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ff5e58;
+      }
+    }
   }
 }
 
@@ -44,22 +75,6 @@
     display: none;
   }
 
-  .burger__menu {
-    padding: 0 20px 20px;
-    display: flex;
-    flex-direction: column;
-    ul a {
-      width: 100%;
-    }
-    a {
-      width: 46%;
-    }
-    .burger__item {
-      a:after {
-        display: none;
-      }
-    }
-  }
   .benefits__row {
     transform: translateY(-100px);
   }
@@ -96,9 +111,6 @@
 }
 
 @media (max-width: 600px) {
-  .burger__menu {
-    width: 70%;
-  }
   .footer__subscribe {
     width: 100%;
     input[type="text"] {
@@ -124,9 +136,6 @@
 }
 
 @media (max-width: 500px) {
-  .burger__menu {
-    width: 80%;
-  }
   .first_screen {
     h1 {
       font-size: 26px;
@@ -136,9 +145,6 @@
 }
 
 @media (max-width: 400px) {
-  .burger__menu {
-    width: 100%;
-  }
 }
 
 @media (max-width: 350px) {
