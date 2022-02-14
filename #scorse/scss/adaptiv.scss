@@ -82,3 +82,67 @@
     justify-content: flex-start;
   }
 }
+
+@media (max-width: 650px) {
+  .first_screen {
+    h1 {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+  }
+  .slider__item:last-child {
+    padding: 100px 30px 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .burger__menu {
+    width: 70%;
+  }
+  .footer__subscribe {
+    width: 100%;
+    input[type="text"] {
+      width: 100%;
+    }
+    input[type="submit"] {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .first_screen {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .benefits__list {
+    li {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .burger__menu {
+    width: 80%;
+  }
+  .first_screen {
+    h1 {
+      font-size: 26px;
+      line-height: 1.7;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .burger__menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer__column:first-child {
+    margin-right: 50px;
+  }
+}
