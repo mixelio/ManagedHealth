@@ -120,6 +120,17 @@
       right: 0;
     }
   }
+  .slider__item {
+    &:first-child {
+      display: none;
+    }
+    &:last-child {
+      flex: 1 1 100%;
+    }
+  }
+  .swiper-button-prev {
+    left: 27px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -145,6 +156,11 @@
 }
 
 @media (max-width: 400px) {
+  .good_company_header {
+    span {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 350px) {
